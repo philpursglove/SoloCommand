@@ -12,6 +12,7 @@ $('#DetermineApproachButton').click(function () {
 
     showEvade(evade);
     showAttack(attack);
+    showAttitude(evade);
 
     $('#MovementDescription').text('');
     $('#ActionDescription').text('');
@@ -76,50 +77,50 @@ $('#DetermineApproachButton').click(function () {
             switch (evade) {
                 case 'Blank':
                     switch (attack) {
-                    case 'Blank':
-                        $('#MovementDescription').text('2-speed straight maneuver');
-                        break;
-                    case 'Focus':
-                        $('#MovementDescription').text('Slowest turn maneuver towards the Tally');
-                        break;
-                    case 'Hit':
-                        $('#MovementDescription').text('Fastest turn maneuver towards the Tally');
-                        break;
-                    case 'Crit':
-                        $('#MovementDescription').text('Fastest advanced maneuver away from the Tally');
-                        break;
+                        case 'Blank':
+                            $('#MovementDescription').text('2-speed straight maneuver');
+                            break;
+                        case 'Focus':
+                            $('#MovementDescription').text('Slowest turn maneuver towards the Tally');
+                            break;
+                        case 'Hit':
+                            $('#MovementDescription').text('Fastest turn maneuver towards the Tally');
+                            break;
+                        case 'Crit':
+                            $('#MovementDescription').text('Fastest advanced maneuver away from the Tally');
+                            break;
                     }
                     break;
                 case 'Focus':
                     switch (attack) {
-                    case 'Blank':
-                        $('#MovementDescription').text('Slowest blue straight maneuver');
-                        break;
-                    case 'Focus':
-                        $('#MovementDescription').text('Average blue straight maneuver');
-                        break;
-                    case 'Hit':
-                        $('#MovementDescription').text('Slowest blue bank or turn maneuver towards the Tally');
-                        break;
-                    case 'Crit':
-                        $('#MovementDescription').text('Fastest blue bank or turn towards the Tally');
-                        break;
+                        case 'Blank':
+                            $('#MovementDescription').text('Slowest blue straight maneuver');
+                            break;
+                        case 'Focus':
+                            $('#MovementDescription').text('Average blue straight maneuver');
+                            break;
+                        case 'Hit':
+                            $('#MovementDescription').text('Slowest blue bank or turn maneuver towards the Tally');
+                            break;
+                        case 'Crit':
+                            $('#MovementDescription').text('Fastest blue bank or turn towards the Tally');
+                            break;
                     }
                     break;
                 case 'Evade':
                     switch (attack) {
-                    case 'Blank':
-                        $('#MovementDescription').text('Fastest bank towards the nearest obstacle');
-                        break;
-                    case 'Focus':
-                        $('#MovementDescription').text('Slowest bank away from the nearest obstacle');
-                        break;
-                    case 'Hit':
-                        $('#MovementDescription').text('Slowest straight, stationary or reverse maneuver');
-                        break;
-                    case 'Crit':
-                        $('#MovementDescription').text('Slowest blue bank maneuver away from the nearest obstacle');
-                        break;
+                        case 'Blank':
+                            $('#MovementDescription').text('Fastest bank towards the nearest obstacle');
+                            break;
+                        case 'Focus':
+                            $('#MovementDescription').text('Slowest bank away from the nearest obstacle');
+                            break;
+                        case 'Hit':
+                            $('#MovementDescription').text('Slowest straight, stationary or reverse maneuver');
+                            break;
+                        case 'Crit':
+                            $('#MovementDescription').text('Slowest blue bank maneuver away from the nearest obstacle');
+                            break;
                     }
                     break;
             }
@@ -128,50 +129,50 @@ $('#DetermineApproachButton').click(function () {
             switch (evade) {
                 case 'Blank':
                     switch (attack) {
-                    case 'Blank':
-                        $('#MovementDescription').text('2-speed straight maneuver');
-                        break;
-                    case 'Focus':
-                        $('#MovementDescription').text('Fastest turn maneuver towards the Tally');
-                        break;
-                    case 'Hit':
-                        $('#MovementDescription').text('Slowest advanced maneuver away from the Tally');
-                        break;
-                    case 'Crit':
-                        $('#MovementDescription').text('Fastest advanced maneuver towards the Tally');
-                        break;
+                        case 'Blank':
+                            $('#MovementDescription').text('2-speed straight maneuver');
+                            break;
+                        case 'Focus':
+                            $('#MovementDescription').text('Fastest turn maneuver towards the Tally');
+                            break;
+                        case 'Hit':
+                            $('#MovementDescription').text('Slowest advanced maneuver away from the Tally');
+                            break;
+                        case 'Crit':
+                            $('#MovementDescription').text('Fastest advanced maneuver towards the Tally');
+                            break;
                     }
                     break;
                 case 'Focus':
                     switch (attack) {
-                    case 'Blank':
-                        $('#MovementDescription').text('Slowest blue bank or turn maneuver towards the Tally');
-                        break;
-                    case 'Focus':
-                        $('#MovementDescription').text('Slowest blue bank or turn maneuver towards the Tally');
-                        break;
-                    case 'Hit':
-                        $('#MovementDescription').text('Average blue bank or turn maneuver towards the Tally');
-                        break;
-                    case 'Crit':
-                        $('#MovementDescription').text('Fastest blue bank or turn towards the Tally');
-                        break;
+                        case 'Blank':
+                            $('#MovementDescription').text('Slowest blue bank or turn maneuver towards the Tally');
+                            break;
+                        case 'Focus':
+                            $('#MovementDescription').text('Slowest blue bank or turn maneuver towards the Tally');
+                            break;
+                        case 'Hit':
+                            $('#MovementDescription').text('Average blue bank or turn maneuver towards the Tally');
+                            break;
+                        case 'Crit':
+                            $('#MovementDescription').text('Fastest blue bank or turn towards the Tally');
+                            break;
                     }
                     break;
                 case 'Evade':
                     switch (attack) {
-                    case 'Blank':
-                        $('#MovementDescription').text('Fastest bank towards the Tally');
-                        break;
-                    case 'Focus':
-                        $('#MovementDescription').text('Slowest turn towards the Tally');
-                        break;
-                    case 'Hit':
-                        $('#MovementDescription').text('Slowest turn towards the Tally');
-                        break;
-                    case 'Crit':
-                        $('#MovementDescription').text('Fastest advanced maneuver away from the nearest obstacle');
-                        break;
+                        case 'Blank':
+                            $('#MovementDescription').text('Fastest bank towards the Tally');
+                            break;
+                        case 'Focus':
+                            $('#MovementDescription').text('Slowest turn towards the Tally');
+                            break;
+                        case 'Hit':
+                            $('#MovementDescription').text('Slowest turn towards the Tally');
+                            break;
+                        case 'Crit':
+                            $('#MovementDescription').text('Fastest advanced maneuver away from the nearest obstacle');
+                            break;
                     }
                     break;
             }
@@ -181,50 +182,50 @@ $('#DetermineApproachButton').click(function () {
             switch (evade) {
                 case 'Blank':
                     switch (attack) {
-                    case 'Blank':
-                        $('#MovementDescription').text('2-speed straight maneuver');
-                        break;
-                    case 'Focus':
-                        $('#MovementDescription').text('Fastest advanced maneuver towards the Tally');
-                        break;
-                    case 'Hit':
-                        $('#MovementDescription').text('Fastest advanced maneuver towards the Tally');
-                        break;
-                    case 'Crit':
-                        $('#MovementDescription').text('Slowest advanced maneuver towards the Tally');
-                        break;
+                        case 'Blank':
+                            $('#MovementDescription').text('2-speed straight maneuver');
+                            break;
+                        case 'Focus':
+                            $('#MovementDescription').text('Fastest advanced maneuver towards the Tally');
+                            break;
+                        case 'Hit':
+                            $('#MovementDescription').text('Fastest advanced maneuver towards the Tally');
+                            break;
+                        case 'Crit':
+                            $('#MovementDescription').text('Slowest advanced maneuver towards the Tally');
+                            break;
                     }
                     break;
                 case 'Focus':
                     switch (attack) {
-                    case 'Blank':
-                        $('#MovementDescription').text('Fastest blue bank or turn maneuver towards the Tally');
-                        break;
-                    case 'Focus':
-                        $('#MovementDescription').text('Fastest blue bank or turn maneuver away from the Tally');
-                        break;
-                    case 'Hit':
-                        $('#MovementDescription').text('Slowest blue bank or turn maneuver towards the Tally');
-                        break;
-                    case 'Crit':
-                        $('#MovementDescription').text('Slowest blue bank or turn away from the Tally');
-                        break;
+                        case 'Blank':
+                            $('#MovementDescription').text('Fastest blue bank or turn maneuver towards the Tally');
+                            break;
+                        case 'Focus':
+                            $('#MovementDescription').text('Fastest blue bank or turn maneuver away from the Tally');
+                            break;
+                        case 'Hit':
+                            $('#MovementDescription').text('Slowest blue bank or turn maneuver towards the Tally');
+                            break;
+                        case 'Crit':
+                            $('#MovementDescription').text('Slowest blue bank or turn away from the Tally');
+                            break;
                     }
                     break;
                 case 'Evade':
                     switch (attack) {
-                    case 'Blank':
-                        $('#MovementDescription').text('Fastest straight');
-                        break;
-                    case 'Focus':
-                        $('#MovementDescription').text('Fastest turn away from the nearest obstacle');
-                        break;
-                    case 'Hit':
-                        $('#MovementDescription').text('Fastest turn towards the nearest obstacle');
-                        break;
-                    case 'Crit':
-                        $('#MovementDescription').text('Slowest turn towards the nearest obstacle');
-                        break;
+                        case 'Blank':
+                            $('#MovementDescription').text('Fastest straight');
+                            break;
+                        case 'Focus':
+                            $('#MovementDescription').text('Fastest turn away from the nearest obstacle');
+                            break;
+                        case 'Hit':
+                            $('#MovementDescription').text('Fastest turn towards the nearest obstacle');
+                            break;
+                        case 'Crit':
+                            $('#MovementDescription').text('Slowest turn towards the nearest obstacle');
+                            break;
                     }
                     break;
             }
@@ -307,3 +308,17 @@ function showAttack(attack) {
             break;
     }
 };
+
+function showAttitude(evade) {
+    switch (evade) {
+        case 'Blank':
+            $('#AttitudeDescription').text('Offensive');
+            break;
+        case 'Focus':
+            $('#AttitudeDescription').text('Balanced');
+            break;
+        case 'Evade':
+            $('#AttitudeDescription').text('Defensive');
+            break;
+    }
+}
