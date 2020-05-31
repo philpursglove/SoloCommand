@@ -7,15 +7,17 @@ $('#DetermineApproachButton').click(function () {
         return;
     }
 
+    $('#MovementDescription').text('');
+    $('#ActionDescription').text('');
+
     var evade = rollEvadeDie();
     var attack = rollAttackDie();
 
     showEvade(evade);
     showAttack(attack);
     showAttitude(evade);
+    showAction(evade);
 
-    $('#MovementDescription').text('');
-    $('#ActionDescription').text('');
 
     switch (tally) {
         case 0:
@@ -320,5 +322,22 @@ function showAttitude(evade) {
         case 'Evade':
             $('#AttitudeDescription').text('Defensive');
             break;
+    }
+}
+
+function showAction(evade) {
+    $('#ActionDescription').html('');
+    switch (evade) {
+    case 'Blank':
+        $('#ActionDescription').html('<ol><li>If no enemy ship is in any of the solo ships firing arcs, it performs a Barrel Roll, Boost or Rotate Turret actio that will cause at least one enemy ship to be in any of its firing arcs</li><li>If the solo ship is equipped with a special weapon with the Target Lock header, it performs the Target Lock action choosing the nearest enemy ship in the firing arc and range of that special weapon</li><li>The solo ship performs the Target Lock action, choosing the nearest enemy ship in its firing arc. If no enemy ship is in the firing arc, it chooses the nearest enemy ship</li><li>If no enemy ship is in the solo ships firing arc and any of its Torpedo, Missile or Device upgrades have one or more inactive charges, it performs the Reload action</li><li>If the solo ship has no Focus token, it performs the Focus action</li><li>If the solo ship does not have a Calculate token, it performs the Calculate action</li></ol>');
+        break;
+    case 'Focus':
+        $('#ActionDescription').html('<ol><li>The solo ship performs a Coordinate action, choosing the nearest friendly ship without Cooridnate in its action bar that can perform an action</li><li>If there is an obstacle in the solo ships bullseye arc at range 0-2, it performs a barrel or boost action away from the obstacle</li><li>If the solo ship does not have a Focus token it performs the Focus action</li><li>If the solo ship does not have a Calculate token it performs the Calculate action</li></ol>');
+
+        break;
+    case 'Evade':
+        $('#ActionDescription').html(
+            '<ol><li>If the solo ship is in at least 1 enemy ships firing arc, it performs a barrel roll, boost or SLAM action that will move it out of at least 1 enemy ships firing arc.</li><li>The solo ship performs the Reinforce action, reinforcing the full arc that the most enemy ships are in</li><li>The solo ship performs the Jam action choosing the nearest enemy ship with a target lock</li><li>If the solo ship does not have an Evade token, it performs the Evade action</li><li>If the solo ship does not have a Focus token, it performs the Focus action</li><li>If the solo ship does not have a Calculate token, it performs a Calculate action</li></ol>');
+        break;
     }
 }
