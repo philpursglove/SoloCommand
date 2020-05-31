@@ -1,4 +1,13 @@
 // JavaScript source code
+$('#NextShipButton').click(function() {
+    $('#MovementDescription').text('');
+    $('#ActionDescription').text('');
+    $('#AttitudeDescription').text('');
+    $('#EvadeResult').removeClass();
+    $('#AttackResult').removeClass();
+    $('#TallyLocation').val(-1);
+});
+
 $('#DetermineApproachButton').click(function () {
     var tally = parseInt($('#TallyLocation').val());
 
