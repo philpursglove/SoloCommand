@@ -288,15 +288,19 @@ function rollAttackDie() {
 
 function showEvade(evade) {
     $('#EvadeResult').removeClass();
+    $('#EvadeApproach').attr('title', '');
     switch (evade) {
         case 'Blank':
             $('#EvadeResult').addClass('xwing-miniatures-font xwing-miniatures-font-condition-outline');
+            $('#EvadeApproach').attr('title', 'Blank');
             break;
         case 'Focus':
             $('#EvadeResult').addClass('xwing-miniatures-font xwing-miniatures-font-focus');
+            $('#EvadeApproach').attr('title', 'Focus');
             break;
         case 'Evade':
             $('#EvadeResult').addClass('xwing-miniatures-font xwing-miniatures-font-evade');
+            $('#EvadeApproach').attr('title', 'Evade');
             break;
 
     }
@@ -304,18 +308,23 @@ function showEvade(evade) {
 
 function showAttack(attack) {
     $('#AttackResult').removeClass();
+    $('#AttackApproach').attr('title', '');
     switch (attack) {
         case 'Blank':
             $('#AttackResult').addClass('xwing-miniatures-font xwing-miniatures-font-condition-outline');
+            $('#AttackApproach').attr('title', 'Blank');
             break;
         case 'Focus':
             $('#AttackResult').addClass('xwing-miniatures-font xwing-miniatures-font-focus');
+            $('#AttackApproach').attr('title', 'Focus');
             break;
         case 'Hit':
             $('#AttackResult').addClass('xwing-miniatures-font xwing-miniatures-font-hit');
+            $('#AttackApproach').attr('title', 'Hit');
             break;
         case 'Crit':
             $('#AttackResult').addClass('xwing-miniatures-font xwing-miniatures-font-crit');
+            $('#AttackApproach').attr('title', 'Crit');
             break;
     }
 };
