@@ -7,6 +7,12 @@
     <title>@ViewData["Title"] - SoloCommand</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/xwing-miniatures.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/css/xwing-miniatures.min.css" />
+    </environment>
 </head>
 <body>
     <header>

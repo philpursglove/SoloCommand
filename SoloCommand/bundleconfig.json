@@ -4,5 +4,11 @@
     "inputFiles": [
       "wwwroot/js/SoloCommandTS.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/css/xwing-miniatures.min.css",
+    "inputFiles": [
+      "wwwroot/css/xwing-miniatures.css"
+    ]
   }
 ]
