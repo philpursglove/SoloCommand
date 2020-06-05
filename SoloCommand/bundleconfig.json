@@ -1,0 +1,8 @@
+[
+  {
+    "outputFileName": "wwwroot/js/SoloCommandTS.min.js",
+    "inputFiles": [
+      "wwwroot/js/SoloCommandTS.js"
+    ]
+  }
+]

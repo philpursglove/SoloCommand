@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="form-group">
+            <label for="TallyLocation">Tally Location</label>
+            <select class="form-control" id="TallyLocation">
+                <option value="-1"></option>
+                <option value="0">Bullseye</option>
+                <option value="1">Front Arc</option>
+                <option value="2">Side Arc</option>
+                <option value="3">Rear Arc</option>
+            </select>
+            <input type="button" class="btn btn-success" id="DetermineApproachButton" value="Determine Approach" />
+        </div>
+    </div>
+    <div class="row">
+        <span class="alert alert-success" id="EvadeApproach" data-toggle="tooltip" data-placement="bottom" title=""><i class="xwing-miniatures-font" id="EvadeResult"></i></span>
+        <span class="alert alert-danger" id="AttackApproach" data-toggle="tooltip" data-placement="bottom" title=""><i class="xwing-miniatures-font" id="AttackResult"></i></span>
+    </div>
+    <div class="row">
+        Maneuver:&nbsp;<span id="MovementDescription"></span>
+    </div>
+    <div class="row">
+        Attitude:&nbsp;<span id="AttitudeDescription"></span>
+    </div>
+    <div class="row">
+        Action:&nbsp;<div id="ActionDescription"></div>
+    </div>
+    <div class="row">
+        <input type="button" class="btn btn-warning" value="Next Ship" id="NextShipButton" />
+    </div>
+</div>
+
