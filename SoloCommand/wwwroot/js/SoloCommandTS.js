@@ -24,7 +24,7 @@ var TallyLocation;
     TallyLocation[TallyLocation["Rear"] = 3] = "Rear";
 })(TallyLocation || (TallyLocation = {}));
 $('#DetermineApproachButton').click(function () {
-    var tally = parseInt(document.getElementById('TallyLocation').value);
+    let tally = parseInt(document.getElementById('TallyLocation').value);
     if (tally === TallyLocation.Blank) {
         alert('You have no approach vector!');
         return;
