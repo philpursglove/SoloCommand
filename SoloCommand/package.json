@@ -1,14 +1,9 @@
 {
-  "name": "solocommand",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "asp.net",
+  "private": true,
   "devDependencies": {
-    "@types/jquery": "^3.3.38"
+    "gulp": "4.0.2",
+    "del": "5.1.0"
   }
 }

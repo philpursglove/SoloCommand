@@ -6,10 +6,7 @@
     "target": "es6"
   },
   "files": [
-    "./wwwroot/js/SoloCommandTS.ts"
+    "./wwwroot/js/SoloCOmmandTS.ts"
   ],
-  "compileOnSave": true,
-  "compilerOptions": {
-    "typeRoots": ["node_modules/@types"]
-  } 
+  "compileOnSave": true
 }
